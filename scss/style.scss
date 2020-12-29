@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@import "mixin";
+@import "var";
+
+body{
+    background-color: $body-background;
+}
+
+.content-one{
+    @include content;
+}
+
+.topcolor{
+    //background-color: black;
+    background-image: url("moon.jpg");
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    .person-name{
+        h2{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            font-size: 2rem;
+            color: $person-name;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+    }
+}
+.profile-logo{
+    position: relative;
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color:$profile-logo-bg;
+    z-index: 2;
+    box-shadow: 0px 0px 10px $profile-shadow;
+    
+}
+
+.cardsI{
+    @include cards;
+
+    .card-education{
+
+        @include card4020;
+        .title{
+            @include cardtitle;
+        }
+    }
+    .card-online{
+        width: 40rem;
+        height: 42rem;
+        border: none;
+        box-shadow: 0px 0px 10px;
+        margin: 1rem;
+        background-color: $card-background;
+        .title{
+            @include cardtitle;
+        }
+    }
+
+    .card-marriage{
+
+        @include card4020;
+        .title{
+            @include cardtitle;
+        }
+    }
+
+    .card-work{
+        @include card4020;
+        .title{
+            @include cardtitle;
+        }
+    }
+
+    .card{
+        @include card4030;
+        .title{
+            @include cardtitle;
+        }
+        
+    }
+    
+}
+
+
+
+.education{
+    @include margin-left;
+    h2{
+        @include headin2;
+    }
+}
+
+.marriage{
+    @include margin-left;
+    h2{
+        @include headin2;
+    }
+}
+
+.work{
+    @include margin-left;
+    h2{
+        @include headin2;
+    }
+}
+
+
+.online{
+    @include margin-left;
+    h2{
+        @include headin2;
+    }
+}
+
+.personal{
+    @include margin-left;
+    h2{
+        @include headin2;
+    }
+}
+
+.content-two{
+    @include content;
+}
+
+
+
+.button{
+    text-align: center;
+    button{
+        padding: 1rem;
+        width: 20rem;
+        font-size: 1.3rem;
+        border: 1px solid $button-border;
+        border-radius: 15px;
+        margin: 1rem;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px;
+    }
+}
+
+

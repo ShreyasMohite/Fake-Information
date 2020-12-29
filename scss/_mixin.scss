@@ -1,0 +1,50 @@
+@import "var";
+
+@mixin  margin-left {
+    margin-left: 1rem;
+}
+
+@mixin headin2{
+    font-size: 1rem;
+}
+
+@mixin  content {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    
+}
+
+@mixin cards{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin: 2rem;
+    flex-wrap: wrap;
+}
+
+@mixin  card4020 {
+    width: 40rem;
+    height: 20rem;
+    border: none;
+    box-shadow: 0px 0px 10px;
+    margin: 1rem;
+    background-color: $card-background;
+    
+}
+
+@mixin  card4030 {
+    width: 40rem;
+    height: 30rem;
+    border: none;
+    box-shadow: 0px 0px 10px;
+    margin: 1rem;
+    background-color:$card-background;
+    
+}
+
+@mixin  cardtitle {
+    text-align: center;
+    padding: 1rem;
+}
+
